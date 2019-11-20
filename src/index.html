@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ut.code();</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            font-family: sans-serif;
+            color: #444;
+            background-color: #eee;
+            text-align: center;
+        }
+        header {
+            margin: 4%;
+            padding: 0 2%;
+        }
+        img {
+            width: 20%;
+        }
+        #qr-view, #qr-view2 {
+            background: center/contain no-repeat;
+            height: 30%;
+        }
+        #url-view {
+            color: #0af;
+        }
+    </style>
+</head>
+<body>
+    <header><img src="utc-logo.svg"></header>
+    <h1>Congratulations!</h1>
+    <p>あなたは今日、はじめてWebサイトを公開しました。</p>
+    <p>以下のQRコードまたはURLからアクセスできます。</p>
+    <a id="url-view" target="_blank"></a>
+    <div id="qr-view"></div>
+    <p>上記URLは以後24時間有効です。</p>
+    <p>それ以降もWebサイトを存続させたい場合は、以下のQRコードからホスティング先のNetlifyにユーザー登録をしてください。</p>
+    <div id="qr-view2"></div>
+    <script src="script.js"></script>
+</body>
+</html>
